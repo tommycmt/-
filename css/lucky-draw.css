@@ -1,0 +1,126 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding-top: 1%;
+  color: #333;
+  text-align: center;
+}
+
+.poster-container {
+  z-index: 1;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #d72638;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.prizes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.prizes-sec {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.prize {
+  width: 250px;
+  border: 2px solid #d72638;
+  border-radius: 10px;
+  background: #fefefe;
+  padding: 15px;
+  text-align: center;
+}
+
+.prize img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.prize img.clicked {
+  filter: brightness(50%);
+  cursor: not-allowed;
+}
+
+.prize h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+  color: #d72638;
+}
+
+.prize p {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.footer {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.footer a {
+  color: #d72638;
+  text-decoration: none;
+}
+
+/* Overlay 樣式 */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease;
+  z-index: 5;
+}
+
+.overlay img {
+  max-width: 60%;
+  height: 60%;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.overlay.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.last-one {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  position: relative;
+  left: -20px;
+
+}
