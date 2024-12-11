@@ -79,35 +79,62 @@
         <img src="./img/placeholder-250.png" onclick="showOverlay(this)">
       </div>
     </div>
-    <div class="prizes-sec">
+    <div class="prizes-third">
       <!-- E 賞 -->
-      <div class="prize" style="width:48%">
+      <div class="prize" style="width:45%" oncontextmenu="prevent(event)">
         <h3>D賞</h3>
         <p>聖誕杯子套裝</p>
+        <h2><span class="gift-count" onclick="minusOne(this)" oncontextmenu="addOne(this, event)" >10</span><span>/10</span></h2>
       </div>
       <!-- F 賞 -->
-      <div class="prize"style="width:48%">
+      <div class="prize"style="width:45%" oncontextmenu="prevent(event)">
         <h3>E賞</h3>
         <p>可愛玩具</p>
+        <h2><span class="gift-count" onclick="minusOne(this)" oncontextmenu="addOne(this, event)" >10</span><span>/10</span></h2>
       </div>
     </div>
-    <div class="prizes-sec">
+    <div class="prizes-third">
       <!-- G 賞 -->
-      <div class="prize"style="width:48%">
+      <div class="prize"style="width:45%" oncontextmenu="prevent(event)">
         <h3>F賞</h3>
         <p>隨機小禮物</p>
+        <h2><span class="gift-count" onclick="minusOne(this)" oncontextmenu="addOne(this, event)" >10</span><span>/10</span></h2>
       </div>
-      <div class="prize"style="width:48%">
+      <div class="prize"style="width:45%" oncontextmenu="prevent(event)">
         <h3>G賞</h3>
         <p>隨機小禮物</p>
+        <h2><span class="gift-count" onclick="minusOne(this)" oncontextmenu="addOne(this, event)" >10</span><span>/10</span></h2>
       </div>
     </div>
     </div>
   </div>
   </div>
 
+  <script>
+    function minusOne(imgElement) {
+      const giftCount = imgElement
+      let count = parseInt(giftCount.innerText.trim());
+      if (count <= 0)
+        return;
+      count--;
+      giftCount.innerText = `${count}`;
+    }
+
+    function addOne(imgElement, event) {
+      event.preventDefault();
+      const giftCount = imgElement
+      let count = parseInt(giftCount.innerText.trim());
+      count++;
+      giftCount.innerText = `${count}`;
+    }
+
+    function prevent(event) {
+      event.preventDefault();
+    }
+
+  </script>
   <!-- Overlay -->
-  <div class="overlay" id="overlay" onclick="hideOverlay()">
+  <div class="overlay unselectable" id="overlay" onclick="hideOverlay()">
     <img src="" alt="放大的獎品圖片" id="overlay-img">
   </div>
 
