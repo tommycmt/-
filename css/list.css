@@ -1,0 +1,73 @@
+.prizes {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+.prize {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.list-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.list-container h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.prize div {
+  flex: 1;
+  text-align: center;
+}
+
+.prize-cat-S1, .prize-cat-S1 + div, .prize-cat-S1 + div + div {
+  background-color: #FFD700;
+  opacity: 0.8;
+}
+
+.prize-cat-S2, .prize-cat-S2 + div, .prize-cat-S2 + div + div {
+  background-color: #FFD700;
+  opacity: 0.8;
+}
+
+.prize-cat-A, .prize-cat-A + div, .prize-cat-A + div + div {
+  background-color: #C0C0C0;
+  opacity: 0.8;
+}
+
+.prize-cat-B, .prize-cat-B + div, .prize-cat-B + div + div {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.prize-cat-C, .prize-cat-C + div, .prize-cat-C + div + div {
+  background-color: orange;
+  opacity: 0.8;
+}
+
+.prize-cat-D, .prize-cat-D + div, .prize-cat-D + div + div {
+  background-color: yellow;
+  opacity: 0.8;
+}
+
+
+.prize-cat-E, .prize-cat-E + div, .prize-cat-E + div + div {
+  background-color: green;
+  opacity: 0.8;
+}
+
+.prize-cat-F, .prize-cat-F + div, .prize-cat-F + div + div {
+  background-color: rgb(113, 47, 160);
+  opacity: 0.8;
+}
+
+.prize-cat-G, .prize-cat-G + div, .prize-cat-G + div + div {
+  background-color: violet;
+  opacity: 0.8;
+}
