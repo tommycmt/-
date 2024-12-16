@@ -9,6 +9,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  border: 1px solid #4e9c6d;
 }
 
 .list-container {
@@ -19,12 +20,17 @@
 .list-container h1 {
   text-align: center;
   margin-top: 20px;
-  font-size: 6vw;
+  font-size: 5vw;
 }
 
 .prize div {
   flex: 1;
   text-align: center;
+  align-content: center;
+}
+
+.prize div.prize-name {
+  flex: 2;
 }
 
 .prize-cat-S1, .prize-cat-S1 + div, .prize-cat-S1 + div + div {
@@ -64,7 +70,7 @@
 }
 
 .prize-cat-F, .prize-cat-F + div, .prize-cat-F + div + div {
-  background-color: rgb(113, 47, 160);
+  background-color: rgb(180, 107, 232);
   opacity: 0.8;
 }
 
