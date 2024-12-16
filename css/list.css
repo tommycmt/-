@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border: 1px solid #4e9c6d;
+  border: 1.3px solid #4e9c6d;
 }
 
 .list-container {
@@ -49,7 +49,7 @@
 }
 
 .prize-cat-B, .prize-cat-B + div, .prize-cat-B + div + div {
-  background-color: red;
+  background-color: #ff0000d6;
   opacity: 0.8;
 }
 
@@ -65,7 +65,7 @@
 
 
 .prize-cat-E, .prize-cat-E + div, .prize-cat-E + div + div {
-  background-color: green;
+  background-color: #008000ad;
   opacity: 0.8;
 }
 
